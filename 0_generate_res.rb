@@ -2,7 +2,7 @@
 
 =begin
 prestep: convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
-Step 1: RNAalihishapes RF00500_seed.aln -k 100 > RF00500_seed.res
+Step 1: RNAlihishapes RF00500_seed.aln -k 100 > RF00500_seed.res
 Step 2: 1_* 2_* 3_* 4_*
 Step 3: replace [_] with [\_]
 Step 4: gnuplot RF00500_seed.kin.plt; okular RF00500_seed.kin.ps
