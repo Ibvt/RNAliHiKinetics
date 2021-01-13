@@ -10,6 +10,8 @@ prestep: install RNAliHeliCes and RNAliHiPath (https://github.com/Ibvt/RNAliHeli
 
          (if necessary) convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
 
+Taking RF00500 as an example alignment, we can run the program as follows,
+
 Step 1: RNAliHeliCes RF00500_seed.aln -k 100 > RF00500_seed.res
 
 Step 2: ./1_generate_kin.rb    RF00500
