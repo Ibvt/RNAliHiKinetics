@@ -3,7 +3,7 @@ RNA folding kinetics for aligned RNAs
 
 prestep: install RNAHeliCes(https://github.com/huang/RNAHeliCes) and RNAliHeliCes(https://github.com/Ibvt/RNAliHeliCes)
 
-         convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
+         (if necessary) convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
 
 Step 1: RNAliHeliCes RF00500_seed.aln -k 100 > RF00500_seed.res
 
