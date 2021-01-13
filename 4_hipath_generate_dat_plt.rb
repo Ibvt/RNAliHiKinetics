@@ -252,7 +252,7 @@ dirdata.each do |seqfilename|
     
     
     ####### output .kin.dat file ########
-    system("treekin --p0 #{ss_array.length}=1 --t0=0.001 --t8=10000000000 --ratesfile=#{ARGV[0]}/#{rootname}.rates.out -m H < #{ARGV[0]}/#{rootname}.kin > #{ARGV[0]}/#{rootname}.kin.dat")
+    system("treekin_hi --p0 #{ss_array.length}=1 --t0=0.001 --t8=10000000000 --ratesfile=#{ARGV[0]}/#{rootname}.rates.out -m H < #{ARGV[0]}/#{rootname}.kin > #{ARGV[0]}/#{rootname}.kin.dat")
     #puts %x[#{cmd}]
     # http://www.der-schnorz.de/2010/09/gnuplot-colors-presentations-papers-and-contrast/
     linestyles = []    
