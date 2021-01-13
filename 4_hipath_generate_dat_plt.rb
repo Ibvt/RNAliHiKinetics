@@ -156,19 +156,19 @@ dirdata.each do |seqfilename|
     
     
     ####### output a gnuplot file ########
-    begin
-      pltfile = File.new("#{ARGV[0]}/#{rootname}.plt", "w")
-    rescue
-      STDERR.print "Could not open file #{ARGV[0]}/#{rootname}.plt!\n"
-      exit 1
-    end
+    #begin
+    #  pltfile = File.new("#{ARGV[0]}/#{rootname}.plt", "w")
+    #rescue
+    #  STDERR.print "Could not open file #{ARGV[0]}/#{rootname}.plt!\n"
+    #  exit 1
+    #end
 
-    pltfile.puts("set title 'Graph of HiTed versus abs_hienergy (#{rootname})'")
-    pltfile.puts("set xlabel 'HiTed'")
-    pltfile.puts("set ylabel 'abs_hienergy'")
-    pltfile.puts("set term pdf")
-    pltfile.puts("set output '#{rootname}.pdf'")
-    pltfile.puts("plot '#{rootname}.dat' using 1:2 title 'x'")
+    #pltfile.puts("set title 'Graph of HiTed versus abs_hienergy (#{rootname})'")
+    #pltfile.puts("set xlabel 'HiTed'")
+    #pltfile.puts("set ylabel 'abs_hienergy'")
+    #pltfile.puts("set term pdf")
+    #pltfile.puts("set output '#{rootname}.pdf'")
+    #pltfile.puts("plot '#{rootname}.dat' using 1:2 title 'x'")
     
 
     ##########################################################
