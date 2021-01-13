@@ -105,36 +105,36 @@ dirdata.each do |seqfilename|
     
     #########################
     #### calculate hited #### 
-    hited = Array.new(ss_array.length) { Array.new(ss_array.length) {0.0} }
-    i=0
-    ss_array.each do|ss1|
-      j=0
-      ss_array.each do|ss2| 
-        last_line = `HiTed '#{hishapes[i]}' '#{hishapes[j]}' -r 1`
-	last_line.strip!
-        last_line_data = last_line.split(%r{\s+})
-	#puts last_line_data[-1]
-        hited[i][j] = last_line_data[-1].to_f
-	j=j+1
-      end
-      i=i+1
-    end
-    pp hited
+    #hited = Array.new(ss_array.length) { Array.new(ss_array.length) {0.0} }
+    #i=0
+    #ss_array.each do|ss1|
+    #  j=0
+    #  ss_array.each do|ss2| 
+    #    last_line = `HiTed '#{hishapes[i]}' '#{hishapes[j]}' -r 1`
+	#last_line.strip!
+        #last_line_data = last_line.split(%r{\s+})
+	##puts last_line_data[-1]
+        #hited[i][j] = last_line_data[-1].to_f
+	#j=j+1
+    #  end
+    #  i=i+1
+    #end
+    #pp hited
 
     ####### check if the table is symmetrical ########
-    0.upto(ss_array.length-1) do |i|
-      0.upto(i) do |j|
-	if i==j then  
-	  if (hited[i][j]!=0.0) then
-	    exit 1
-	  end
-	else
-	  if (hited[i][j]!=hited[j][i]) then
-	    exit 1
-	  end
-	end
-      end
-    end  
+    #0.upto(ss_array.length-1) do |i|
+    #  0.upto(i) do |j|
+	#if i==j then  
+	 # if (hited[i][j]!=0.0) then
+	 #   exit 1
+	 # end
+	#else
+	 # if (hited[i][j]!=hited[j][i]) then
+	 #   exit 1
+	 # end
+	#end
+      #end
+    #end  
     
     ##########################################################
     ########### Graph of HiTed versus abs_hienergy ###########
@@ -142,17 +142,17 @@ dirdata.each do |seqfilename|
     #### using 'gnuplot rw1.plt' generate rw1.pdf which used the data from rw1.dat
     ##########################################################
     ####### output a .dat file ########    
-    begin
-      datfile = File.new("#{ARGV[0]}/#{rootname}.dat", "w")
-    rescue
-      STDERR.print "Could not open file #{ARGV[0]}/#{rootname}.dat!\n"
-      exit 1
-    end
-    0.upto(ss_array.length-1) do |i|
-      0.upto(i-1) do |j|
-	datfile.puts("#{hited[i][j]}\t#{abs_hienergy[i][j]}")
-      end
-    end
+    #begin
+    #  datfile = File.new("#{ARGV[0]}/#{rootname}.dat", "w")
+    #rescue
+    #  STDERR.print "Could not open file #{ARGV[0]}/#{rootname}.dat!\n"
+    #  exit 1
+    #end
+    #0.upto(ss_array.length-1) do |i|
+    #  0.upto(i-1) do |j|
+	#datfile.puts("#{hited[i][j]}\t#{abs_hienergy[i][j]}")
+    #  end
+    #end
     
     
     ####### output a gnuplot file ########
