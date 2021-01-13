@@ -1,11 +1,11 @@
 # RNAliHiKinetics
 RNA folding kinetics for aligned RNAs
 
-#install RNAliCes and RNAlihishapes
+#install RNAliHeliCes and RNAliHiPath
 
 prestep: convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
 
-Step 1: RNAlihishapes RF00500_seed.aln -k 100 > RF00500_seed.res
+Step 1: RNAliHeliCes RF00500_seed.aln -k 100 > RF00500_seed.res
 
 Step 2: ./1_generate_kin.rb    RF00500
         ./2_generate_ssfile.rb RF00500
