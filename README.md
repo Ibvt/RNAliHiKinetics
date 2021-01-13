@@ -1,7 +1,7 @@
 # RNAliHiKinetics
 RNA folding kinetics for aligned RNAs
 
-prestep: install RNAHeliCes(https://github.com/huang/RNAHeliCes) and RNAliHeliCes(https://github.com/Ibvt/RNAliHeliCes)
+prestep: install RNAliHeliCes and RNAliHiPath (https://github.com/Ibvt/RNAliHeliCes)
 
          (if necessary) convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
 
