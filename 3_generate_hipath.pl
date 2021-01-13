@@ -62,9 +62,9 @@ foreach $wrestler (@raw_data)
 	    my $j=0;
 	    for ($j=0;$j<$line_number;$j++)
 	    {
-                print "RNAlihipath -f ${ARGV[0]}/${rootname}.aln -k ${kvalue} -F ${ARGV[0]}/${rootname}.ssfiles/${i}_${j}.ss -t 1 > $path_directory/${i}_${j}.hipath\n";
+                print "RNAliHiPath -f ${ARGV[0]}/${rootname}.aln -k ${kvalue} -F ${ARGV[0]}/${rootname}.ssfiles/${i}_${j}.ss -t 1 > $path_directory/${i}_${j}.hipath\n";
 		unless (-e "$path_directory/${i}_${j}.hipath") {
-		    system "RNAlihipath -f ${ARGV[0]}/${rootname}.aln -k ${kvalue} -F ${ARGV[0]}/${rootname}.ssfiles/${i}_${j}.ss -t 1 > $path_directory/${i}_${j}.hipath";
+		    system "RNAliHiPath -f ${ARGV[0]}/${rootname}.aln -k ${kvalue} -F ${ARGV[0]}/${rootname}.ssfiles/${i}_${j}.ss -t 1 > $path_directory/${i}_${j}.hipath";
 		}
 	    }
 	    exit 0;
