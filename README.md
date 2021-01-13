@@ -2,6 +2,11 @@
 RNA folding kinetics for aligned RNAs
 
 prestep: install RNAliHeliCes and RNAliHiPath (https://github.com/Ibvt/RNAliHeliCes)
+    
+         install treekin_hi under directory Treekin-0.3.1_hi
+             ./configure
+             make
+             sudo make install
 
          (if necessary) convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
 
