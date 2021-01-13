@@ -8,8 +8,11 @@ prestep: install RNAHeliCes(https://github.com/huang/RNAHeliCes) and RNAliHeliCe
 Step 1: RNAliHeliCes RF00500_seed.aln -k 100 > RF00500_seed.res
 
 Step 2: ./1_generate_kin.rb    RF00500
+
         ./2_generate_ssfile.rb RF00500
+        
         ./3_generate_hipath.pl RF00500
+        
         ./4_hipath_generate_dat_plt.rb RF00500
 
 Step 3: replace [_] with [\_]
