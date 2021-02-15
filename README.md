@@ -17,7 +17,7 @@ prestep2: install treekin_hi under directory Treekin-0.3.1_hi
 
 Taking RF00500 as an example alignment, we can run the program as follows,
 
-Step 1: RNAliHeliCes RF00500_seed.aln -k 100 > RF00500_seed.res
+Step 1: RNAliHeliCes RF00500/RF00500_seed.aln -k 100 > RF00500/RF00500_seed.res
 
 Step 2: ./1_generate_kin.rb    RF00500
 
