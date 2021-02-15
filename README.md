@@ -29,6 +29,11 @@ Step 2: ./1_generate_kin.rb    RF00500
 
 Step 3: replace [_] with [\\\_] in RF00500/RF00500_seed.kin.plt
 
-Step 4: cd RF00500; gnuplot RF00500_seed.kin.plt; ps2pdf RF00500_seed.kin.ps; okular RF00500_seed.kin.pdf
-        
+Step 4:              
+        ./configure
+             make
+             sudo make install
+             cd RF00500; 
+             gnuplot RF00500_seed.kin.plt; 
+             okular RF00500_seed.kin.ps
         #./ShowTree -f RF00500_seed.tree.dat
