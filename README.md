@@ -19,7 +19,8 @@ Taking RF00500 as an example alignment, we can run the program as follows,
 
 Step 1: RNAliHeliCes RF00500/RF00500_seed.aln -k 100 > RF00500/RF00500_seed.res
 
-Step 2: ./1_generate_kin.rb    RF00500
+Step 2: 
+        ./1_generate_kin.rb    RF00500
 
         ./2_generate_ssfile.rb RF00500
         
@@ -29,11 +30,11 @@ Step 2: ./1_generate_kin.rb    RF00500
 
 Step 3: replace [_] with [\\\_] in RF00500/RF00500_seed.kin.plt
 
-Step 4:              
-        ./configure
-             make
-             sudo make install
-             cd RF00500; 
-             gnuplot RF00500_seed.kin.plt; 
-             okular RF00500_seed.kin.ps
-        #./ShowTree -f RF00500_seed.tree.dat
+Step 4:                      
+             cd RF00500;
+             
+             gnuplot RF00500_seed.kin.plt;
+             
+             okular RF00500_seed.kin.ps;
+             
+             #./ShowTree -f RF00500_seed.tree.dat
