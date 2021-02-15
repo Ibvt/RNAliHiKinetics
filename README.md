@@ -1,9 +1,12 @@
 # RNAliHiKinetics
 RNA folding kinetics for aligned RNAs
 
-prestep: install RNAliHeliCes and RNAliHiPath (https://github.com/Ibvt/RNAliHeliCes)
-    
-         install treekin_hi under directory Treekin-0.3.1_hi
+prestep1: install RNAliHeliCes and RNAliHiPath (https://github.com/Ibvt/RNAliHeliCes)
+             ./configure CFLAGS="-fno-stack-protector" CPPFLAGS="-std=c++98" CXXFLAGS="-std=c++98 -fno-stack-protector"
+             make
+             sudo make install
+
+prestep2: install treekin_hi under directory Treekin-0.3.1_hi
              ./configure
              make
              sudo make install
