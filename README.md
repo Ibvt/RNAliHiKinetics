@@ -39,4 +39,4 @@ Step 4:
              
              okular RF00500_seed.kin.ps;
              
-             #cd ..; ./ShowTree -f RF00500/RF00500_seed.tree.dat
+             #(optional) cd ..; ./ShowTree -f RF00500/RF00500_seed.tree.dat
