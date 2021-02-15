@@ -2,16 +2,18 @@
 RNA folding kinetics for aligned RNAs
 
 prestep1: install RNAliHeliCes and RNAliHiPath (https://github.com/Ibvt/RNAliHeliCes)
+
              ./configure CFLAGS="-fno-stack-protector" CPPFLAGS="-std=c++98" CXXFLAGS="-std=c++98 -fno-stack-protector"
              make
              sudo make install
 
 prestep2: install treekin_hi under directory Treekin-0.3.1_hi
+
              ./configure
              make
              sudo make install
 
-         (if necessary) convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
+(if necessary) convert stockholm to aln: http://www.ibi.vu.nl/programs/convertalignwww/
 
 Taking RF00500 as an example alignment, we can run the program as follows,
 
