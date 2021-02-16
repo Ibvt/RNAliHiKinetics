@@ -252,33 +252,33 @@ dirdata.each do |seqfilename|
     
     
     ####### output .kin.dat file ########
-    system("treekin_hi --p0 #{ss_array.length}=1 --t0=0.001 --t8=10000000000 --ratesfile=#{ARGV[0]}/#{rootname}.rates.out -m H < #{ARGV[0]}/#{rootname}.kin > #{ARGV[0]}/#{rootname}.kin.dat")
+    system("treekin_hi --p0 #{ss_array.length}=1 --t0=0.0001 --t8=10000000000 --ratesfile=#{ARGV[0]}/#{rootname}.rates.out -m H < #{ARGV[0]}/#{rootname}.kin > #{ARGV[0]}/#{rootname}.kin.dat")
     #puts %x[#{cmd}]
     # http://www.der-schnorz.de/2010/09/gnuplot-colors-presentations-papers-and-contrast/
     linestyles = []    
     linecolors=["red","blue","forest-green","magenta","gray","black","dark-red","orange"]    #,"royalblue","dark-orange"
     1.upto(8) do |i|
       1.upto(8) do |j|
-	linestyles << "set style line #{(i-1)*8+j} lt #{j} lc rgb \"#{linecolors[(j-1+i-1)%8]}\" lw 3"
+	linestyles << "set style line #{(i-1)*8+j} dt #{j} lc rgb \"#{linecolors[(j-1+i-1)%8]}\" lw 3"
       end
     end
     1.upto(8) do |i|
       1.upto(8) do |j|
-	linestyles << "set style line #{(i-1+8)*8+j} lt #{j} lc rgb \"#{linecolors[(j-1+i-1)%8]}\" lw 1"
+	linestyles << "set style line #{(i-1+8)*8+j} dt #{j} lc rgb \"#{linecolors[(j-1+i-1)%8]}\" lw 1"
       end
     end
     pp linestyles
     # linestyles    
-    # "set style line 1 lt 1 lc rgb \"red\" lw 3",
-    # set style line 2 lt 2 lc rgb "blue" lw 3
-    # set style line 3 lt 3 lc rgb "forest-green" lw 3
-    # set style line 4 lt 4 lc rgb "magenta" lw 3
-    # set style line 5 lt 5 lc rgb "dark-orange" lw 3
-    # set style line 6 lt 6 lc rgb "royalblue" lw 3
-    # set style line 7 lt 7 lc rgb "black" lw 3
-    # set style line 8 lt 8 lc rgb "dark-red" lw 3
-    # set style line 9 lt 9 lc rgb "orange-red" lw 3
-    # set style line 10 lt 10 lc rgb "gray" lw 3
+    # "set style line 1 dt 1 lc rgb \"red\" lw 3",
+    # set style line 2 dt 2 lc rgb "blue" lw 3
+    # set style line 3 dt 3 lc rgb "forest-green" lw 3
+    # set style line 4 dt 4 lc rgb "magenta" lw 3
+    # set style line 5 dt 5 lc rgb "dark-orange" lw 3
+    # set style line 6 dt 6 lc rgb "royalblue" lw 3
+    # set style line 7 dt 7 lc rgb "black" lw 3
+    # set style line 8 dt 8 lc rgb "dark-red" lw 3
+    # set style line 9 dt 9 lc rgb "orange-red" lw 3
+    # set style line 10 dt 10 lc rgb "gray" lw 3
     pp hishapes
     ####### output .kin.plt file ########    
     begin
