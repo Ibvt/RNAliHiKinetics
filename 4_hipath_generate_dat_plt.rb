@@ -298,7 +298,7 @@ dirdata.each do |seqfilename|
     kin_plt_file.puts("set yrange [0:1]")
     #kin_plt_file.puts("set term postscript enhanced font 'Time-roman,9'")
     #kin_plt_file.puts("set term png size 1200,1000 enhanced font 'Time-roman,9'")
-    kin_plt_files.puts("set term pngcairo dashed size 1200,1000 enhanced font 'Time-roman,9'"
+    kin_plt_files.puts("set term pngcairo dashed size 1200,1000 enhanced font 'Time-roman,9'")
     #kin_plt_file.puts("set term postscript")
     ##kin_plt_file.puts("set output '#{rootname}.kin.pdf'")
     #kin_plt_file.puts("set output '#{rootname}.kin.ps'")
