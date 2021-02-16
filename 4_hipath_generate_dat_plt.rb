@@ -287,19 +287,19 @@ dirdata.each do |seqfilename|
       STDERR.print "Could not open file #{ARGV[0]}/#{rootname}.kin.plt!\n"
       exit 1
     end  
-    #kin_plt_file.puts("set title 'Hishape based kinetic analysis (#{rootname})'")
     #term is abbv. of terminal?
     #kin_plt_file.puts("set terminal postscript eps enhanced color")  # dashed 16
     #kin_plt_file.puts("set terminal postscript enhanced eps color dashed 16")
+    #kin_plt_file.puts("set term postscript enhanced font 'Time-roman,9'")
+    #kin_plt_file.puts("set term png size 1200,1000 enhanced font 'Time-roman,9'")
+    kin_plt_file.puts("set term pngcairo dashed size 1200,1000 enhanced font 'Time-roman,9'")
+    #kin_plt_file.puts("set term postscript")
+    #kin_plt_file.puts("set title 'Hishape based kinetic analysis (#{rootname})'")
     kin_plt_file.puts("set xlabel \"{/Times=12 arbitrary units}\"")
     kin_plt_file.puts("set xrange [0.001:10000000000.0]")
     kin_plt_file.puts("set logscale x")
     kin_plt_file.puts("set ylabel \"{/Times=12 Population density}\"")
     kin_plt_file.puts("set yrange [0:1]")
-    #kin_plt_file.puts("set term postscript enhanced font 'Time-roman,9'")
-    #kin_plt_file.puts("set term png size 1200,1000 enhanced font 'Time-roman,9'")
-    kin_plt_file.puts("set term pngcairo dashed size 1200,1000 enhanced font 'Time-roman,9'")
-    #kin_plt_file.puts("set term postscript")
     ##kin_plt_file.puts("set output '#{rootname}.kin.pdf'")
     #kin_plt_file.puts("set output '#{rootname}.kin.ps'")
     kin_plt_file.puts("set output '#{rootname}.kin.png'")
