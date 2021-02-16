@@ -37,6 +37,6 @@ Step 4:
              
              gnuplot RF00500_seed.kin.plt;
              
-             okular RF00500_seed.kin.ps;
+             display RF00500_seed.kin.png;
              
              #(optional) cd ..; ./ShowTree -f RF00500/RF00500_seed.tree.dat
