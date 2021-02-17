@@ -21,9 +21,6 @@ git clone https://github.com/Ibvt/RNAliHeliCes
 make
 sudo make install
 ```
-
-(Note: If necessary please replace automake-1.14 with your version (e.g. 1.15) by typing "sed -i -e 's/1.14/1.15/g' Makefile".)
-
 Next is to clone and install RNAliHiKinetics and to install treekin_hi from the Treekin-0.3.1_hi subdirectory
 ```sh
 git clone https://github.com/Ibvt/RNAliHiKinetics
