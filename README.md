@@ -5,8 +5,8 @@ RNA folding kinetics for aligned RNAs
 RNAliHiKinetics needs RNAliHelices and RNAliHipath whose installation is described below. Additional dependencies are:
 
 compile time:
-* C++ compiler (GCC g++ for example)
-* C compiler (GCC for example)
+* C++ compiler (for example GCC g++)
+* C compiler (for example GCC)
 * GNU make >= 3.81
 
 compile time and runtime:
