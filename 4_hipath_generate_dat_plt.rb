@@ -320,13 +320,20 @@ dirdata.each do |seqfilename|
     end
     kin_plt_file.puts("plot '#{rootname}.kin.dat' using 1:2 title '#{hishapes[0]}' with lines ls 1, \\")
     2.upto(ss_array.length-1) do |i|  # 
-	kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{i+1} title '#{hishapes[i-1]}' with lines ls #{i}, \\")
+        if hishapes[i-1] != "[_]" then
+            kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{i+1} title '#{hishapes[i-1]}' with lines ls #{i}, \\")
+        else
+            kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{i+1} title '[\\_]' with lines ls #{i}, \\")
+        end
     end
 #     kin_plt_file.puts("plot '#{rootname}.kin.dat' using 1:#{sorted_id_fenergies[0][0]} title '#{hishapes[sorted_id_fenergies[0][0]]}' with lines linewidth 3, \\")
 #     2.upto(8) do |i|  # ss_array.length-1
 # 	kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{sorted_id_fenergies[i+1][0]} title '#{hishapes[sorted_id_fenergies[i-1][0]]}' with lines linewidth 3, \\")
 #     end
-    kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{ss_array.length+1} title '#{hishapes[ss_array.length-1]}' with lines ls #{ss_array.length}")  # #{hishapes[ss_array.length-1]}
-
+    if hishapes[ss_array.length-1] != "[_]" then
+        kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{ss_array.length+1} title '#{hishapes[ss_array.length-1]}' with lines ls #{ss_array.length}")  # #{hishapes[ss_array.length-1]}
+    else
+        kin_plt_file.puts("'#{rootname}.kin.dat' using 1:#{ss_array.length+1} title '[\\_]' with lines ls #{ss_array.length}")
+    end
     kin_plt_file.puts("pause -1 'Hit any key to continue'")
 end
