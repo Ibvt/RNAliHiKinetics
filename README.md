@@ -4,9 +4,10 @@ RNA folding kinetics for aligned RNAs
 ## Dependencies
 RNAliHiKinetics needs RNAliHelices and RNAliHipath whose installation is described below. Additional dependencies are:
 
-for the configuration:
-* autoconf (Input file for Autoconf is configure.ac)
-* automake (Input file(s) for Automake is Makefile.am)
+compile time:
+* C++ compiler (GCC g++ for example)
+* C compiler (GCC for example)
+* GNU make >= 3.81
 
 compile time and runtime:
 * Boost Libraries (>1.58): program_options, date_time
