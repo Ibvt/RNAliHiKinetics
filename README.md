@@ -38,7 +38,7 @@ Note: RNAliHeliCes expects the input alignment in ClustalW (aln) format. To conv
 Taking RF00500 as an example alignment, we can run the program as follows,
 
 ### Step 1: Run RNAliHeliCes on the alignment
-```RNAliHeliCes RF00500/RF00500_seed.aln -k 100 > RF00500/RF00500_seed.res```
+```RNAliHeliCes RF00500/RF00500_seed.aln -k100 -x0 > RF00500/RF00500_seed.res```
 
 ### Step 2: Perform RNAliHiKinetics simulation steps
 ```sh
